@@ -1,0 +1,106 @@
+.preguntas5 {
+    padding: 2rem;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    font-family: var(--font-montserrat);
+  }
+  
+  .preguntas-y-respuestas-container {
+    text-align: center;
+    font-size: 2rem;
+    color: #36135C;
+    font-family: var(--font-eb-garamond);
+    font-size: 50px;
+    font-weight: 800;
+    margin-top: 40px;
+  }
+  
+  .educacion-financiera-en {
+    color: #00D100;
+  }
+  
+  .preguntas6 {
+    margin-top: 3rem;
+  }
+  
+  .pregunta {
+    background-color: #470f83;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+    margin-top: 42px;
+  }
+  
+  .headline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .headline b {
+    font-weight: bold;
+    color: #ECECEC;
+    font-size: 25px;
+    margin-left: 10px;
+  }
+  
+  .chevron-down-icon {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+  }
+  
+  .chevron-down-icon.rotate {
+    transform: rotate(180deg);
+  }
+  
+  .pregunta-child {
+    width: 100%;
+    margin-top: 10px;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    padding: 0 1rem;
+    transition: max-height 0.5s ease, opacity 0.5s ease, padding 0.5s ease;
+  }
+  
+  .respuesta {
+    font-size: 25px;
+    color: #ECECEC;
+    padding: 1rem;
+    margin-right: 70px;
+    margin-left: -16px;
+  }
+  
+  hr.separator {
+    background: linear-gradient(to right, #00D100, #00C6F9);
+    border: none;
+    height: 3px;
+    margin: 0;
+    margin-top: -8px;
+    margin-right: 100px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .pregunta.open .pregunta-child {
+    max-height: 1000px;
+    opacity: 1;
+    padding: 1rem;
+  }
+  
+  .pregunta.open .chevron-down-icon {
+    transform: rotateX(180deg);
+    transition: transform 0.5s ease;
+  }
+  
+  .pregunta.open hr.separator {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+  

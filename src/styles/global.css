@@ -14,6 +14,9 @@ body {
     --font-eb-garamond: 'EB Garamond';
   
     /* font sizes */
+    --font-size-4xl: 32px;
+    --font-size-lg: 18px;
+    --font-size-md: 14px;
     --font-size-xl: 20px;
     --font-size-31xl: 50px;
     --font-size-11xl: 30px;

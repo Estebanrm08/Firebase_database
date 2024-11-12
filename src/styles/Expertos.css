@@ -1,0 +1,236 @@
+.expertos-container {
+    text-align: center;
+    padding: 20px;
+    margin-top: 90px;
+    margin-bottom: 150px;
+}
+
+.expertos-title {
+    font-size: 50px;
+    margin: -40px 0 40px;
+    font-family: var(--font-eb-garamond);
+}
+
+.highlight-green {
+    color: #00d100;
+}
+
+.expertos-photos {
+    display: flex;
+    justify-content: center;
+    gap: 36px;
+}
+
+.expert {
+    cursor: pointer;
+    text-align: center;
+    font-size: 26px;
+    font-family: var(--font-montserrat);
+}
+
+.expert-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.expert-name {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #470f83;
+    color: white;
+    border-radius: 25px;
+    width: 280px;
+}
+
+.expert-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(173, 130, 187, 0.9); /* Fondo morado semitransparente */
+    backdrop-filter: blur(2px); /* Efecto de desenfoque en el fondo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    opacity: 0; /* Empieza invisible */
+    animation: fadeIn 0.5s forwards; /* Animación de aparición */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.modal-content {
+    background-color: #470F83;
+    padding: 40px;
+    border-radius: 30px;
+    width: 60%;
+    height: 340px;
+    max-width: 540px;
+    z-index: 20;
+    position: relative;
+    box-shadow: 0 15px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: 2px solid #00d100;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 40%; /* Borde redondeado */
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s, color 0.2s ease, transform 0.2s; /* Transiciones mejoradas */
+}
+
+/* Animación para el botón cuando el mouse está dentro del borde verde */
+.close-button:hover,
+.close-button:focus-within {
+    background-color: #00d100; /* Cambia el fondo al pasar el mouse o al estar dentro del borde */
+    color: #fff;
+    transform: scale(1.2); /* Efecto de agrandamiento al pasar el mouse */
+}
+
+.modal-title {
+    font-size: 30px;
+    font-weight: 800;
+    font-family: var(--font-montserrat);
+    margin-top: 25px;
+    margin-bottom: 30px;
+    color: #00d100;
+    line-height: 40px;
+    position: relative;
+    top: -40px;
+}
+
+.experience-section {
+    margin-top: 200px;
+    font-family: var(--font-montserrat);
+    color: #fff;
+}
+
+.experience-section h4 {
+    font-size: 300px;
+    margin-bottom: 10px;
+    color: #fff;
+    font-family: var(--font-montserrat);
+}
+
+.experience-list {
+    padding: 0;
+    color: #fff;
+    text-align: left;
+}
+
+.experience-list li {
+    margin-bottom: 6px;
+    margin-left: 92px;
+    font-size: 20px;
+    position: relative;
+    top: 40px;
+    right: -36px;
+    font-family: var(--font-montserrat);
+}
+
+.courses-section {
+    display: flex;
+    gap: 15px;
+    font-family: var(--font-montserrat);
+    color: #fff;
+    align-items: flex-start;
+}
+
+.courses-header {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 10px;
+}
+
+.course-logo {
+    width: 80px;
+    height: 80px;
+    align-self: start;
+    margin-left: 40px;
+    position: relative;
+    right: -26px;
+    top: 40px;
+}
+
+.course-list {
+    position: relative;
+    right: -70px;
+    top: 20px;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    color: #fff;
+    font-size: 22px;
+    font-family: var(--font-montserrat);
+}
+
+.course-list li {
+    margin-bottom: 5px;
+    margin-left: 120px;
+}
+
+.course-list a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.course-list a:hover {
+    color: #00d100; /* Cambia el color al pasar el mouse */
+}
+
+.modal-section h4 {
+    font-size: 28px;
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 2px;
+    font-family: var(--font-montserrat);
+    margin-top: -100px;
+    align-self: self-start;
+    margin-left: 120px;
+    position: relative;
+    right: -40px;
+    top: 20px;
+}
+
+.Experiencia {
+    right: 210px;
+    top: 28px;
+    position: relative;
+}
+
+/* Para hacer que el fade-out se aplique al cerrar */
+.expert-modal.fade-out {
+    animation: fadeOut 0.5s forwards; /* Aplica la animación de cierre */
+}
