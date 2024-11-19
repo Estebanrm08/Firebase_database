@@ -104,7 +104,7 @@ const Objectives = () => {
           <img
             className="search-icon"
             alt="Search"
-            src="./public/search@2x.png"
+            src="./search@2x.png"
             onClick={handleSearch}
           />
         </div>

@@ -17,7 +17,7 @@ const TarjetasCursos = () => {
       {/* Sección 1: Maestros en finanzas */}
       <div className="section-title">
         <img
-          src="/public/Teacher Hiring.png"
+          src="./Teacher Hiring.png"
           alt="Teacher Hiring"
           className="section-icon"
         />
@@ -32,7 +32,7 @@ const TarjetasCursos = () => {
                 <img
                   className="profile-image"
                   alt="Imagen del instructor"
-                  src="/public/foto juliana.png"
+                  src="./foto juliana.png"
                 />
                 <a
                   className="course-title"
@@ -53,7 +53,7 @@ const TarjetasCursos = () => {
               <div className="course-details">
                 <div className="detail-item">
                   <img
-                    src="/public/clock@2x.png"
+                    src="./clock@2x.png"
                     alt="Duración"
                     className="detail-icon"
                   />
@@ -61,7 +61,7 @@ const TarjetasCursos = () => {
                 </div>
                 <div className="detail-item">
                   <img
-                    src="/public/Attendance.png"
+                    src="./Attendance.png"
                     alt="Práctica"
                     className="detail-icon"
                   />
@@ -69,7 +69,7 @@ const TarjetasCursos = () => {
                 </div>
                 <div className="detail-item">
                   <img
-                    src="/public/dollar-coin@2x.png"
+                    src="./dollar-coin@2x.png"
                     alt="Pago"
                     className="detail-icon"
                   />
@@ -87,7 +87,7 @@ const TarjetasCursos = () => {
                 <img
                   className="profile-image"
                   alt="Imagen del instructor"
-                  src="/public/fot-liliana@2x.png"
+                  src="./fot-liliana@2x.png"
                 />
                 <a
                   className="course-title"
@@ -108,7 +108,7 @@ const TarjetasCursos = () => {
               <div className="course-details">
                 <div className="detail-item">
                   <img
-                    src="/public/clock@2x.png"
+                    src="./clock@2x.png"
                     alt="Duración"
                     className="detail-icon"
                   />
@@ -116,7 +116,7 @@ const TarjetasCursos = () => {
                 </div>
                 <div className="detail-item">
                   <img
-                    src="/public/Attendance.png"
+                    src="./Attendance.png"
                     alt="Práctica"
                     className="detail-icon"
                   />
@@ -124,7 +124,7 @@ const TarjetasCursos = () => {
                 </div>
                 <div className="detail-item">
                   <img
-                    src="/public/dollar-coin@2x.png"
+                    src="./dollar-coin@2x.png"
                     alt="Pago"
                     className="detail-icon"
                   />
@@ -142,7 +142,7 @@ const TarjetasCursos = () => {
                 <img
                   className="profile-image"
                   alt="Imagen del instructor"
-                  src="/public/ellipse-13@2x.png"
+                  src="./ellipse-13@2x.png"
                 />
                 <a
                   className="course-title"
@@ -163,7 +163,7 @@ const TarjetasCursos = () => {
               <div className="course-details">
                 <div className="detail-item">
                   <img
-                    src="/public/clock@2x.png"
+                    src="./clock@2x.png"
                     alt="Duración"
                     className="detail-icon"
                   />
@@ -171,7 +171,7 @@ const TarjetasCursos = () => {
                 </div>
                 <div className="detail-item">
                   <img
-                    src="/public/Attendance.png"
+                    src="./Attendance.png"
                     alt="Práctica"
                     className="detail-icon"
                   />
@@ -179,7 +179,7 @@ const TarjetasCursos = () => {
                 </div>
                 <div className="detail-item">
                   <img
-                    src="/public/dollar-coin@2x.png"
+                    src="./dollar-coin@2x.png"
                     alt="Pago"
                     className="detail-icon"
                   />
@@ -196,7 +196,7 @@ const TarjetasCursos = () => {
                 <img
                   className="profile-image"
                   alt="Imagen del instructor"
-                  src="/public/ellipse-12-5@2x.png"
+                  src="./ellipse-12-5@2x.png"
                 />
                 <a
                   className="course-title"
@@ -217,7 +217,7 @@ const TarjetasCursos = () => {
               <div className="course-details">
                 <div className="detail-item">
                   <img
-                    src="/public/clock@2x.png"
+                    src="./clock@2x.png"
                     alt="Duración"
                     className="detail-icon"
                   />
@@ -225,7 +225,7 @@ const TarjetasCursos = () => {
                 </div>
                 <div className="detail-item">
                   <img
-                    src="/public/Attendance.png"
+                    src="./Attendance.png"
                     alt="Práctica"
                     className="detail-icon"
                   />
@@ -233,7 +233,7 @@ const TarjetasCursos = () => {
                 </div>
                 <div className="detail-item">
                   <img
-                    src="/public/dollar-coin@2x.png"
+                    src="./dollar-coin@2x.png"
                     alt="Pago"
                     className="detail-icon"
                   />
@@ -248,7 +248,7 @@ const TarjetasCursos = () => {
       {/* Sección 2: Universidades */}
       <div className="section-title">
         <img
-          src="/public/Graduation Cap.png"
+          src="./Graduation Cap.png"
           alt="Graduation Cap"
           className="section-icon"
         />
@@ -264,7 +264,7 @@ const TarjetasCursos = () => {
                 <img
                   className="profile-image"
                   alt="Imagen del instructor"
-                  src="/public/Ellipse 12.png"
+                  src="./Ellipse 12.png"
                 />
                 <a
                   className="course-title"
@@ -285,7 +285,7 @@ const TarjetasCursos = () => {
               <div className="course-details">
                 <div className="detail-item">
                   <img
-                    src="/public/clock@2x.png"
+                    src="./clock@2x.png"
                     alt="Duración"
                     className="detail-icon"
                   />
@@ -293,7 +293,7 @@ const TarjetasCursos = () => {
                 </div>
                 <div className="detail-item">
                   <img
-                    src="/public/dollar-coin@2x.png"
+                    src="./dollar-coin@2x.png"
                     alt="Pago"
                     className="detail-icon"
                   />
@@ -311,7 +311,7 @@ const TarjetasCursos = () => {
                 <img
                   className="profile-image"
                   alt="Imagen del instructor"
-                  src="/public/Ellipse.png"
+                  src="./Ellipse.png"
                 />
                 <a
                   className="course-title"
@@ -332,7 +332,7 @@ const TarjetasCursos = () => {
               <div className="course-details">
                 <div className="detail-item">
                   <img
-                    src="/public/clock@2x.png"
+                    src="./clock@2x.png"
                     alt="Duración"
                     className="detail-icon"
                   />
@@ -340,7 +340,7 @@ const TarjetasCursos = () => {
                 </div>
                 <div className="detail-item">
                   <img
-                    src="/public/dollar-coin@2x.png"
+                    src="./dollar-coin@2x.png"
                     alt="Pago"
                     className="detail-icon"
                   />
@@ -358,7 +358,7 @@ const TarjetasCursos = () => {
                 <img
                   className="profile-image"
                   alt="Imagen del instructor"
-                  src="/public/Ellipse 11.png"
+                  src="./Ellipse 11.png"
                 />
                 <a
                   className="course-title"
@@ -379,7 +379,7 @@ const TarjetasCursos = () => {
               <div className="course-details">
                 <div className="detail-item">
                   <img
-                    src="/public/clock@2x.png"
+                    src="./clock@2x.png"
                     alt="Duración"
                     className="detail-icon"
                   />
@@ -387,7 +387,7 @@ const TarjetasCursos = () => {
                 </div>
                 <div className="detail-item">
                   <img
-                    src="/public/dollar-coin@2x.png"
+                    src="./dollar-coin@2x.png"
                     alt="Pago"
                     className="detail-icon"
                   />
@@ -405,7 +405,7 @@ const TarjetasCursos = () => {
                 <img
                   className="profile-image"
                   alt="Imagen del instructor"
-                  src="/public/Ellipse1.png"
+                  src="./Ellipse1.png"
                 />
                 <a
                   className="course-title"
@@ -426,7 +426,7 @@ const TarjetasCursos = () => {
               <div className="course-details">
                 <div className="detail-item">
                   <img
-                    src="/public/clock@2x.png"
+                    src="./clock@2x.png"
                     alt="Duración"
                     className="detail-icon"
                   />
@@ -434,7 +434,7 @@ const TarjetasCursos = () => {
                 </div>
                 <div className="detail-item">
                   <img
-                    src="/public/dollar-coin@2x.png"
+                    src="./dollar-coin@2x.png"
                     alt="Pago"
                     className="detail-icon"
                   />
@@ -449,7 +449,7 @@ const TarjetasCursos = () => {
       {/* Sección 3: Empresas */}
       <div className="section-title">
         <img
-          src="/public/Business Group.png"
+          src="./Business Group.png"
           alt="Business Group"
           className="section-icon"
         />
@@ -464,7 +464,7 @@ const TarjetasCursos = () => {
                 <img
                   className="profile-image"
                   alt="Imagen del instructor"
-                  src="/public/Ellips.png"
+                  src="./Ellips.png"
                 />
                 <a
                   className="course-title"
@@ -485,7 +485,7 @@ const TarjetasCursos = () => {
               <div className="course-details">
                 <div className="detail-item">
                   <img
-                    src="/public/clock@2x.png"
+                    src="./clock@2x.png"
                     alt="Duración"
                     className="detail-icon"
                   />
@@ -493,7 +493,7 @@ const TarjetasCursos = () => {
                 </div>
                 <div className="detail-item">
                   <img
-                    src="/public/dollar-coin@2x.png"
+                    src="./dollar-coin@2x.png"
                     alt="Pago"
                     className="detail-icon"
                   />
@@ -511,7 +511,7 @@ const TarjetasCursos = () => {
                 <img
                   className="profile-image"
                   alt="Imagen del instructor"
-                  src="/public/fot-jp@2x.png"
+                  src="./fot-jp@2x.png"
                 />
                 <a
                   className="course-title"
@@ -532,7 +532,7 @@ const TarjetasCursos = () => {
               <div className="course-details">
                 <div className="detail-item">
                   <img
-                    src="/public/clock@2x.png"
+                    src="./clock@2x.png"
                     alt="Duración"
                     className="detail-icon"
                   />
@@ -540,7 +540,7 @@ const TarjetasCursos = () => {
                 </div>
                 <div className="detail-item">
                   <img
-                    src="/public/dollar-coin@2x.png"
+                    src="./dollar-coin@2x.png"
                     alt="Pago"
                     className="detail-icon"
                   />
@@ -558,7 +558,7 @@ const TarjetasCursos = () => {
                 <img
                   className="profile-image"
                   alt="Imagen del instructor"
-                  src="/public/Ellipse2.jpg"
+                  src="./Ellipse2.jpg"
                 />
                 <a
                   className="course-title"
@@ -579,7 +579,7 @@ const TarjetasCursos = () => {
               <div className="course-details">
                 <div className="detail-item">
                   <img
-                    src="/public/clock@2x.png"
+                    src="./clock@2x.png"
                     alt="Duración"
                     className="detail-icon"
                   />
@@ -587,7 +587,7 @@ const TarjetasCursos = () => {
                 </div>
                 <div className="detail-item">
                   <img
-                    src="/public/dollar-coin@2x.png"
+                    src="./dollar-coin@2x.png"
                     alt="Pago"
                     className="detail-icon"
                   />
@@ -605,7 +605,7 @@ const TarjetasCursos = () => {
                 <img
                   className="profile-image"
                   alt="Imagen del instructor"
-                  src="/public/ellipse-11@2x.png"
+                  src="./ellipse-11@2x.png"
                 />
                 <a
                   className="course-title"
@@ -626,7 +626,7 @@ const TarjetasCursos = () => {
               <div className="course-details">
                 <div className="detail-item">
                   <img
-                    src="/public/clock@2x.png"
+                    src="./clock@2x.png"
                     alt="Duración"
                     className="detail-icon"
                   />
@@ -634,7 +634,7 @@ const TarjetasCursos = () => {
                 </div>
                 <div className="detail-item">
                   <img
-                    src="/public/dollar-coin@2x.png"
+                    src="./dollar-coin@2x.png"
                     alt="Pago"
                     className="detail-icon"
                   />

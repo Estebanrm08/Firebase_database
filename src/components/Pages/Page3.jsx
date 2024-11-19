@@ -1,5 +1,5 @@
 import React from "react";
-import Tarjetas from "../Tarjetas"; // La ruta ahora es más sencilla
+import Tarjetas from "../Tarjetas"; 
 import "@styles/global.css";
 import "@styles/pag.css";
 
@@ -39,7 +39,7 @@ const Page3 = () => {
                 className="imagen-icon"
                 loading="lazy"
                 alt=""
-                src="/public/imagen@2x.png" // Ruta de imagen
+                src="./imagen@2x.png" // Ruta de imagen
               />
             </div>
           </div>
@@ -73,7 +73,7 @@ const Page3 = () => {
                   className="billete1-icon"
                   loading="lazy"
                   alt=""
-                  src="/public/billete1.svg" // Ruta de imagen
+                  src="./billete1.svg" // Ruta de imagen
                 />
               </div>
             </div>
@@ -81,7 +81,7 @@ const Page3 = () => {
               className="moneda-signo-icon"
               loading="lazy"
               alt=""
-              src="/public/moneda-signo@2x.png" // Ruta de imagen
+              src="./moneda-signo@2x.png" // Ruta de imagen
             />
           </div>
           <div className="lack-education">
@@ -110,7 +110,7 @@ const Page3 = () => {
             className="letter-icon"
             loading="lazy"
             alt=""
-            src="/public/letter@2x.png"
+            src="./letter@2x.png"
           />
           <div className="email-container">
             <h2 className="holafortubilcom">hola@fortubil.com</h2>

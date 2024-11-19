@@ -20,7 +20,7 @@ const Navbar = () => {
     <header className="encabezado">
       <div className="logo-name" id="logoName">
         <Link to="/" className="logo-link">
-          <img className="logo-icon" loading="lazy" alt="Logo" src="./public/logo.svg" />
+          <img className="logo-icon" loading="lazy" alt="Logo" src="./logo.svg" />
           <div className="fortubil">FORTUBIL</div>
         </Link>
       </div>

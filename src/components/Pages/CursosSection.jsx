@@ -27,7 +27,7 @@ const CursosSection = () => {
           </span>
           {/* Insertamos la imagen aquí */}
           <img
-            src="/public/moneda1@2x.png"
+            src="./moneda1@2x.png"
             alt="Moneda decorativa"
             className="moneda-decorativa"
           />

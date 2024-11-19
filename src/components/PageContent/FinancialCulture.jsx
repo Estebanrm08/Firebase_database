@@ -10,12 +10,12 @@ const FinancialCulture = () => {
     <div className="features">
       <div className="features-grid">
         <div className="feature-item">
-          <img className="feature-icon" loading="lazy" alt="Icono" src="./public/Lupa.png" />
+          <img className="feature-icon" loading="lazy" alt="Icono" src="./Lupa.png" />
           <div className="feature-title">Encuentra todo lo de finanzas</div>
           <p className="feature-description">Fuente de recopilación financiera para personas que están interesadas en mejorar su educación.</p>
         </div>
         <div className="feature-item">
-          <img className="feature-icon" loading="lazy" alt="Icono" src="./public/Pc.png" />
+          <img className="feature-icon" loading="lazy" alt="Icono" src="./Pc.png" />
           <div className="feature-title">Cursos de nuestros promotores</div>
           <p className="feature-description">Contamos con plataformas y especialistas para una experiencia más completa en la educación.</p>
         </div>

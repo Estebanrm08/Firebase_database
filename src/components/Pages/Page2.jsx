@@ -56,7 +56,7 @@ const Pag2 = () => {
                 className={`chevron-down-icon ${openQuestions.includes(q.id) ? "rotate" : ""}`}
                 loading="lazy"
                 alt="Desplegar"
-                src="/public/chevron-down@2x.png"
+                src="./chevron-down@2x.png"
               />
             </div>
             <div className={`pregunta-child ${openQuestions.includes(q.id) ? "show" : ""}`}>

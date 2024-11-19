@@ -22,7 +22,7 @@ const AboutUS = () => {
             className="ilustracion-icon" 
             loading="lazy" 
             alt="Ilustración de educación financiera" 
-            src="./public/ilustracion@2x.png" 
+            src="/ilustracion@2x.png"
           />
         </div>
       </div>
