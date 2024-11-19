@@ -26,8 +26,8 @@
 
 .nav-items {
   display: flex;
-  gap: 60px; /* Ajusta el espacio entre los enlaces */
-  align-items: center;
+  gap: 30px;
+  transition: all 0.3s ease;
 }
 
 .nav-link.active {
@@ -71,14 +71,16 @@
   align-items: center;
   justify-content: space-between;
   background-color: var(--color-indigo-200);
-  padding: var(--padding-3xs) var(--padding-17xl) var(--padding-4xs) var(--padding-11xl);
+  padding: var(--padding-3xs) var(--padding-17xl);
   position: sticky;
   top: 0;
   z-index: 99;
-  gap: 20px; /* Ajuste de espacio entre logo y enlaces */
+  gap: 20px;
   font-size: var(--font-size-31xl);
   color: var(--color-white);
   font-family: var(--font-montserrat);
+  max-width: 100%; /* Asegura que no se desborde */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .plataforma-de-educacion {
@@ -90,10 +92,10 @@
   margin-block-end: 2px;
   font-size: 20px;
   font-weight: 800;
-  font-style: normal;
-  align-self: center;
   color: var(--color-indigo-100);
-  left: 50px;
+  left: 250px;
+  width: 100%;
+  max-width: 100%;
 }
 
 .como-funciona-fortubil-container{
@@ -123,7 +125,8 @@
   font-family: var(--font-eb-garamond);
   text-align: center;
   color: var(--color-black);
-  width: 1100px;
+  width: 100%;
+  max-width: 100%;
 }
 .tagline {
   align-self: stretch;
@@ -134,12 +137,13 @@
   gap: var(--gap-16xl);
 }
 .ilustracion-icon {
-  height: 639px;
+  height: auto;
   flex: 1;
   position: relative;
   max-width: 100%;
   overflow: hidden;
   object-fit: cover;
+  width: 100%;
 }
 .illustration {
   align-self: stretch;
@@ -180,9 +184,10 @@
   flex-direction: column;
   justify-content: flex-start;
   font-weight: lighter;
+  width: 100%;
+  max-width: 100%;
 }
 .search-label {
-  width: 526px;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -190,6 +195,7 @@
   padding: 0 var(--padding-xl);
   box-sizing: border-box;
   max-width: 100%;
+  width: 100%;
 }
 .barra-buscar-child {
   height: 64px;
@@ -225,11 +231,69 @@
 }
 .search-icon {
   height: 45px;
-  width: 37px;
+  width: 45px;
+  cursor: pointer;
+  transition: transform 0.3s ease; 
+}
+
+.search-icon:hover {
+  transform: scale(1.2); 
+}
+
+.suggestions-container {
+  border: 2px solid #ffffff;
+  border-radius: px;
+  background-color: #fff;
+  margin-top: 6px;
+  max-height: 140px;
+  overflow-y: auto;
   position: relative;
-  object-fit: cover;
+  z-index: 1000;
+  width: calc(100% - 40px);
+  top: -4px;
+  right: 12px;
+  font-family: var(--font-montserrat);
+  font-size: var(--font-size-xl);
   z-index: 1;
 }
+.suggestion-item {
+  padding: 12px;
+  cursor: pointer;
+  border-bottom: 2px solid #eee;
+}
+
+.suggestion-item:hover {
+  background-color: #ececec;
+}
+
+.loading-message {
+  color: blue;
+  font-size: var(--font-size-xl);
+  margin-top: 18px;
+}
+
+.error-message {
+  color: red;
+  font-size: var(--font-size-xl);
+  margin-top: 18px;
+}
+
+.selected-term-container {
+  margin-top: 10px;
+  padding: 10px;
+  border: 3px solid #36135c;
+  border-radius: 16px;
+  background-color: #d8d8d8;
+  font-size: 25px;
+}
+
+.selected-term-container a {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 25px;
+}
+
 .barra-buscar {
   align-self: stretch;
   border-radius: var(--br-61xl);
@@ -272,10 +336,14 @@
 .feature-title {
   font-weight: 800; 
   margin-top: 1%;
-  font-family: var(--font-montserrat);  
+  font-family: var(--font-montserrat); 
+  width: 100%;
+  max-width: 100%; 
 }
 .feature-description {
-  font-family: var(--font-montserrat);  
+  font-family: var(--font-montserrat); 
+  width: 100%;
+  max-width: 100%;
 }
 .features-grid,
 .frame-group {
@@ -283,13 +351,15 @@
   display: flex;
   max-width: 100%;
   align-items: center;
+  width: 100%;
 }
 .frame-group {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   gap: 12.5px;
-  min-width: 287px;
+  width: 100%;
+  max-width: 100%;
 }
 .features-grid {
   flex-direction: row;
@@ -305,6 +375,7 @@
   align-items: flex-end;
   justify-content: center;
   gap: 48px;
+  width: 100%;
   max-width: 100%;
   text-align: center;
   font-size: var(--font-size-6xl);
@@ -340,6 +411,8 @@
   background-color: #470f83;
   font-family: var(--font-eb-garamond);
   position: relative;
+  width: 100%;
+  max-width: 100%;
 }
 
 .cursos2 {
@@ -456,4 +529,68 @@
   justify-content: space-between;
   margin-top: 20px;
   position: relative;
+}
+
+.hamburger-menu {
+  display: none; /* Oculta el menú hamburguesa por defecto */
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  z-index: 101;
+}
+
+.hamburger-menu div {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.hamburger-menu span {
+  width: 25px;
+  height: 3px;
+  background-color: var(--color-white);
+  transition: all 0.3s ease;
+}
+
+
+/* Menú hamburguesa para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+  .nav-items {
+    display: none; /* Oculta el menú por defecto */
+    flex-direction: column;
+    background-color: var(--color-indigo-200);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    gap: 10px;
+    padding: 15px 0;
+    z-index: 100;
+    width: 100%;
+    border-top: 2px solid var(--color-limegreen);
+  }
+
+  .nav-items.show {
+    display: flex; /* Muestra el menú cuando esté activo */
+  }
+
+  .hamburger-menu {
+    display: flex; /* Muestra el ícono del menú hamburguesa */
+  }
+  .plataforma-de-educacion {
+    position: relative;
+    letter-spacing: 2px;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-block-start: 45px;
+    margin-block-end: 2px;
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--color-indigo-100);
+    left: 50px;
+    width: 100%;
+    max-width: 100%;
+  }
 }
