@@ -245,7 +245,7 @@
     .expertos-title {
       margin: -20px 0 30px;
       position: relative;
-      left: 40px;
+      left: 20px;
       width: 90%;
       text-align: center;
     }
@@ -254,12 +254,12 @@
       display: flex;
       flex-wrap: wrap; 
       justify-content: center; 
-      gap: 24px; 
+      gap: 60px; 
     }
     .expert-name {
       font-size: 25px; 
       padding: 6px;
-      margin-top: 8px;
+      margin-top: 1px;
       background-color: #470f83; 
       color: white;
       border-radius: 15px; 
@@ -292,7 +292,6 @@
         position: relative;
         right: -10px;
         top: 20px;
-        margin-right: -40px;
     }
     
     .modal-section h4 {
@@ -302,8 +301,8 @@
     }
     
     .Experiencia {
-        right: 80px;
-        top: 38px;
+        right: 30px;
+        top: 32px;
         position: relative;
     }
 
@@ -311,8 +310,8 @@
         background-color: #470F83;
         padding: 40px;
         border-radius: 30px;
-        width: 70%;
-        height: 420px;
+        width: 90%;
+        height: 620px;
         max-width: 540px;
         z-index: 20;
         position: relative;

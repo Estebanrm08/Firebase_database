@@ -1,4 +1,21 @@
+/* General */
+body {
+  margin: 0; /* Elimina márgenes predeterminados */
+  padding: 0; /* Elimina rellenos predeterminados */
+  box-sizing: border-box; /* Incluye bordes y padding en el ancho/alto */
+  min-height: 100vh; /* Asegura que el cuerpo ocupe todo el alto de la ventana */
+  width: 100%; /* Asegura que el cuerpo ocupe todo el ancho */
+  display: flex; /* Utiliza flexbox para centrar o alinear contenido */
+  flex-direction: column; /* Alinea los hijos verticalmente */
+  overflow-x: hidden; /* Previene desbordamiento horizontal */
+}
 
+/* Asegura que el contenido principal también abarque toda la altura restante */
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Se expande al alto completo */
+}
 .nosotros {
   position: relative;
   line-height: 16px;
@@ -417,17 +434,18 @@
 
 @media (max-width: 768px) {
   .nosotros {
-   margin-top: 30px;
+   margin-top: 150px;
     left: 0; 
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   .quines-somos {
     left: 0; 
     text-align: center; 
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 45px;
   }
 
   .about-content {
@@ -439,28 +457,29 @@
     left: 0;
     line-height: 38px;
     text-align: justify;
-    margin-left: 22px;
-    margin-right: 22px;
+    margin-left: 26px;
+    margin-right: 26px;
     margin-top: -30px;
   }
 
   .imagen {
     position: relative;
     left: 20px;
-    width: 99.4%; 
-    height: 89.4%; 
-    top: -100px;
+    width: 425px; 
+    height: 450px; 
+    top: -110px;
+    left: 60px;
     border-radius: var(--br-31xl); 
   }
 
   .imagen-icon {
     position: relative;
-    left: 10px;
-    top: -724px;
+    left: 55px;
+    top: -620px;
     height: auto; 
+    width: 420px;
     max-height: none;
     object-fit: cover;
-    ;
     margin-right: 60px;
   }
 
@@ -468,18 +487,21 @@
     flex-direction: column; 
     align-items: center;
     gap: 20px;
-    margin-bottom: -120px;
+    margin-bottom: -150px;
+    margin-left: 20px;
+    margin-right: 2px;
   }
 
   .nuestra-meta-con-los-jvenes-wrapper {
     margin-bottom: -16px;
+    margin-top: -50px;
     text-align: center; 
   }
 
   .objetivos {
     flex-direction: row; 
     flex-wrap: wrap; 
-    padding: 10px;
+    padding: 1px;
   }
 
   .cards-container {
@@ -492,6 +514,7 @@
 
   .card {
     position: relative;
+    left: 13.6%;
     z-index: 1;
     pointer-events: auto; 
     max-width: 500px; 
@@ -503,9 +526,13 @@
   .culture-description {
     position: relative;
     top: 450px;
-    left: 140px;
+    left: 160px;
     margin-bottom: 680px;
     text-align: start; 
+    margin-top: 1120px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 49px;
   }
 
   .contact-title {
@@ -522,10 +549,10 @@
 
   .billete1-icon {
     margin-bottom: 10px;
-    height: 120px; 
-    width: 150px;
-    left: 300px;
-    top: -160px
+    height: 100px; 
+    width: 100px;
+    left: 140px;
+    top: 610px
   }
 
   .icon-container {
@@ -540,18 +567,25 @@
 
   .moneda-signo-icon {
     position: relative; 
-    left: 40px; 
-    top: -300px; 
-    height: 100px;
-    width: 100px;
+    left: 140px; 
+    top: -180px; 
+    height: 80px;
+    width: 80px;
   }
 
   .la-falta-de {
-    top: 820px;
-    left: -220px;
-    line-height: 28px; 
-    margin-top: 40px; 
-    text-align: justify;
-  }
+    position: relative; /* Mantén el flujo normal */
+    top: 1840px; /* Posición vertical */
+    left: -240px; /* Posición horizontal */
+    width: 300px; /* Ajusta este valor según el ancho deseado */
+    line-height: 28px; /* Espaciado entre líneas */
+    margin: 40px auto; /* Centra el margen superior e inferior */
+    text-align: justify; /* Justifica el texto */
+    padding: 100px; /* Agrega espacio interno */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+}
+.contacto2 {
+  margin-top: 290px;
+}
 }
 

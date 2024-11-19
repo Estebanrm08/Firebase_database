@@ -1,6 +1,5 @@
 .preguntas5 {
     padding: 2rem;
-    font-family: Arial, sans-serif;
     background-color: #ffffff;
     font-family: var(--font-montserrat);
   }
@@ -12,7 +11,7 @@
     font-family: var(--font-eb-garamond);
     font-size: 50px;
     font-weight: 800;
-    margin-top: 40px;
+    margin-top: 20px;
   }
   
   .educacion-financiera-en {
@@ -104,3 +103,32 @@
     transition: opacity 0.3s ease;
   }
   
+  @media (max-width: 768px) {
+  .preguntas-y-respuestas-container {
+    text-align: center;
+    font-size: 2rem;
+    color: #36135C;
+    font-family: var(--font-eb-garamond);
+    font-size: 50px;
+    font-weight: 800;
+    margin-top: 120px;
+  }
+  .respuesta {
+    font-size: 22px;
+    color: #ECECEC;
+    padding: 0.4rem;
+    margin-right: -24px;
+    margin-left: -6px;
+    text-align: start;
+  }
+  hr.separator {
+    background: linear-gradient(to right, #00D100, #00C6F9);
+    border: none;
+    height: 3px;
+    margin: 0;
+    margin-top: -8px;
+    margin-right: 0px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+}
