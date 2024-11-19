@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import '../styles/styles.css';
+import React, { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
+import "../styles/styles.css";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -9,7 +9,8 @@ const Navbar = () => {
   const isActive = (path) => (location.pathname === path ? "nav-link active" : "nav-link");
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    setMenuOpen(false); // Cerrar el menú al cambiar de página
+    window.scrollTo(0, 0); // Llevar la pantalla al inicio
   }, [location.pathname]);
 
   const toggleMenu = () => {
@@ -25,12 +26,15 @@ const Navbar = () => {
         </Link>
       </div>
       <nav>
-        <div className={`nav-items ${menuOpen ? "show" : ""}`} onClick={() => setMenuOpen(false)}>
+        <div className={`nav-items ${menuOpen ? "show" : ""}`}>
           <Link to="/page1" className={isActive("/page1")}>Cursos</Link>
           <Link to="/page2" className={isActive("/page2")}>Preguntas Frecuentes</Link>
           <Link to="/page3" className={isActive("/page3")}>Sobre Nosotros</Link>
         </div>
-        <div className="hamburger-menu" onClick={toggleMenu}>
+        <div
+          className={`hamburger-menu ${menuOpen ? "open" : ""}`}
+          onClick={toggleMenu}
+        >
           <span></span>
           <span></span>
           <span></span>

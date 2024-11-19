@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 
 const Tarjetas = () => {
-  // Estado para almacenar qué tarjeta está seleccionada
   const [selectedCard, setSelectedCard] = useState(null);
 
-  // Imágenes por defecto y las alternativas al hacer clic
   const images = [
     { default: "Group2.png", clicked: "busqueda.png" },
     { default: "Groupp.png", clicked: "Group3.png" },
@@ -12,9 +10,8 @@ const Tarjetas = () => {
     { default: "ACTUALIZAR.png", clicked: "ultimo.png" }
   ];
 
-  // Función que se llama al hacer clic en una tarjeta
   const handleCardClick = (index) => {
-    setSelectedCard(index); // Actualiza la tarjeta seleccionada
+    setSelectedCard(index); 
   };
 
   return (
@@ -23,15 +20,15 @@ const Tarjetas = () => {
       {images.map((image, index) => (
         <div
           key={index}
-          className={`card ${selectedCard === index ? "active" : ""}`} // Aplica la clase 'active' si es la tarjeta seleccionada
-          onClick={() => handleCardClick(index)} // Cambia la tarjeta seleccionada
+          className={`card ${selectedCard === index ? "active" : ""}`} 
+          onClick={() => handleCardClick(index)} // Maneja clics en escritorio
+          onTouchStart={() => handleCardClick(index)} // Maneja toques en dispositivos táctiles
         >
           <div className="icon-container">
             <img
               className="icon"
               loading="lazy"
               alt={`Icono ${index}`}
-              // Muestra la imagen alternativa si la tarjeta está seleccionada, de lo contrario muestra la imagen por defecto
               src={selectedCard === index ? image.clicked : image.default}
             />
           </div>
@@ -50,3 +47,4 @@ const Tarjetas = () => {
 };
 
 export default Tarjetas;
+

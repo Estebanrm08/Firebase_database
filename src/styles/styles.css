@@ -1,3 +1,22 @@
+/* General */
+body {
+  margin: 0; /* Elimina márgenes predeterminados */
+  padding: 0; /* Elimina rellenos predeterminados */
+  box-sizing: border-box; /* Incluye bordes y padding en el ancho/alto */
+  min-height: 100vh; /* Asegura que el cuerpo ocupe todo el alto de la ventana */
+  width: 100%; /* Asegura que el cuerpo ocupe todo el ancho */
+  display: flex; /* Utiliza flexbox para centrar o alinear contenido */
+  flex-direction: column; /* Alinea los hijos verticalmente */
+  overflow-x: hidden; /* Previene desbordamiento horizontal */
+}
+
+/* Asegura que el contenido principal también abarque toda la altura restante */
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Se expande al alto completo */
+}
+
 .logo-name {
   display: flex;
   align-items: center;
@@ -79,6 +98,8 @@
   font-size: var(--font-size-31xl);
   color: var(--color-white);
   font-family: var(--font-montserrat);
+  overflow-x: hidden;
+  height: auto;
   max-width: 100%; /* Asegura que no se desborde */
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
@@ -93,9 +114,10 @@
   font-size: 20px;
   font-weight: 800;
   color: var(--color-indigo-100);
-  left: 250px;
+  left: 10px;
   width: 100%;
   max-width: 100%;
+  text-align: center;
 }
 
 .como-funciona-fortubil-container{
@@ -531,66 +553,190 @@
   position: relative;
 }
 
+/* Animación cuando el menú está abierto */
+.hamburger-menu.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger-menu.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-menu.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+@media (max-width: 768px) {
+
 .hamburger-menu {
-  display: none; /* Oculta el menú hamburguesa por defecto */
+  display: flex; 
   flex-direction: column;
-  gap: 5px;
+  justify-content: space-around;
+  width: 30px;
+  height: 25px;
   cursor: pointer;
-  z-index: 101;
+  z-index: 1100; 
+  position: absolute; 
+  top: 40px; 
+  right: 40px;
+  transition: all 0.3s ease; 
 }
 
-.hamburger-menu div {
-  width: 25px;
-  height: 3px;
-  background-color: #fff;
-  border-radius: 5px;
-  transition: all 0.3s ease;
+.hamburger-menu.open {
+  position: absolute; 
+  top: 50px; 
+  right: 15px;
 }
 
+/* Barras del menú */
 .hamburger-menu span {
-  width: 25px;
+  display: block;
+  width: 100%;
   height: 3px;
-  background-color: var(--color-white);
+  background-color: #00d100; 
+  border-radius: 12px;
   transition: all 0.3s ease;
 }
 
+/* Animación de la X */
+.hamburger-menu.open span:nth-child(1) {
+  transform: rotate(deg) translate(8px);
+}
 
-/* Menú hamburguesa para pantallas pequeñas */
-@media screen and (max-width: 768px) {
-  .nav-items {
-    display: none; /* Oculta el menú por defecto */
-    flex-direction: column;
-    background-color: var(--color-indigo-200);
-    position: absolute;
-    top: 100%;
-    right: 0;
-    left: 0;
-    gap: 10px;
-    padding: 15px 0;
-    z-index: 100;
-    width: 100%;
-    border-top: 2px solid var(--color-limegreen);
-  }
+.hamburger-menu.open span:nth-child(2) {
+  opacity: 0; 
+}
 
-  .nav-items.show {
-    display: flex; /* Muestra el menú cuando esté activo */
-  }
+.hamburger-menu.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
 
-  .hamburger-menu {
-    display: flex; /* Muestra el ícono del menú hamburguesa */
+
+.nav-items {
+  position: fixed;
+  top: 4%;
+  right: 0;
+  width: 40%;
+  height: auto;
+  background-color: var(--color-indigo-200);
+  display: none; 
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.3); 
+  z-index: 1000;
+  animation: slideIn 0.3s ease-out; 
+}
+
+.nav-items.show {
+  display: flex; 
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
   }
-  .plataforma-de-educacion {
-    position: relative;
-    letter-spacing: 2px;
-    line-height: 20px;
-    text-transform: uppercase;
-    margin-block-start: 45px;
-    margin-block-end: 2px;
-    font-size: 20px;
-    font-weight: 800;
-    color: var(--color-indigo-100);
-    left: 50px;
-    width: 100%;
-    max-width: 100%;
+  to {
+    transform: translateX(0);
   }
 }
+
+.logo-icon {
+  height: 60px;
+  width: 59px;
+  flex-shrink: 0; 
+  position: relative;
+  top: 8px;
+  margin-top: 8px;
+}
+
+.fortubil {
+  font-size: 38px;
+  font-weight: 900;
+  color: #fff;
+  white-space: nowrap;  
+  position: absolute;
+  left: 68px;
+  top: 16px; 
+}
+
+.plataforma-de-educacion {
+  position: relative;
+  letter-spacing: 2px;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin-block-start: 45px;
+  margin-block-end: 2px;
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--color-indigo-100);
+  left: 10px;
+  width: 100%;
+  max-width: 100%;
+  text-align: start;
+}
+
+.despierta-tu-potencial-container {
+  margin: 1px;
+  align-self: stretch;
+  position: relative;
+  font-size: 70px;
+  line-height: 88px;
+  font-weight: 700;
+  font-family: var(--font-eb-garamond);
+  text-align: start;
+  color: var(--color-black);
+  width: 100%;
+  max-width: 100%;
+}
+
+body {
+  overflow-x: hidden; 
+  word-wrap: break-word; 
+}
+
+#root {
+  overflow-x: hidden; 
+}
+
+/* Estilo global para asegurar contenedores adaptativos */
+* {
+  max-width: 100%; 
+  box-sizing: border-box; 
+}
+
+.features-grid {
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: flex-start; 
+  gap: 20px; 
+  min-width: auto; 
+}
+
+.features {
+  flex-direction: column; 
+  gap: 20px; 
+  font-size: var(--font-size-4xl); 
+}
+
+.frame-group {
+  gap: 10px; 
+  align-items: center; 
+}
+
+.how-it-works-content-wrapper {
+  flex-direction: column; 
+  padding: 0 20px; 
+  text-align: center; 
+}
+
+.how-it-works-content {
+  gap: 15px; 
+}
+}
+
+
+
+
+
+

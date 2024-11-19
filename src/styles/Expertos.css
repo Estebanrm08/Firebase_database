@@ -17,6 +17,7 @@
 
 .expertos-photos {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 36px;
 }
@@ -230,7 +231,92 @@
     position: relative;
 }
 
-/* Para hacer que el fade-out se aplique al cerrar */
 .expert-modal.fade-out {
-    animation: fadeOut 0.5s forwards; /* Aplica la animación de cierre */
+    animation: fadeOut 0.5s forwards; 
 }
+
+@media (max-width: 768px) {
+    .expertos-container {
+      padding: 15px;
+      margin-top: 50px;
+      margin-bottom: 100px;
+    }
+  
+    .expertos-title {
+      margin: -20px 0 30px;
+      position: relative;
+      left: 40px;
+      width: 90%;
+      text-align: center;
+    }
+  
+    .expertos-photos {
+      display: flex;
+      flex-wrap: wrap; 
+      justify-content: center; 
+      gap: 24px; 
+    }
+    .expert-name {
+      font-size: 25px; 
+      padding: 6px;
+      margin-top: 8px;
+      background-color: #470f83; 
+      color: white;
+      border-radius: 15px; 
+    } 
+    .close-button {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+    
+    .modal-title {
+        position: relative;
+        top: -50px;
+    }
+    
+    .experience-list li {
+        position: relative;
+        top: 40px;
+        right: 30px;
+        margin-right: -40px;
+    }
+    
+    .course-logo {
+        position: relative;
+        right: 42px;
+        top: 80px;
+    }
+    
+    .course-list {
+        position: relative;
+        right: -10px;
+        top: 20px;
+        margin-right: -40px;
+    }
+    
+    .modal-section h4 {
+        position: relative;
+        right: 80px;
+        top: 10px;
+    }
+    
+    .Experiencia {
+        right: 80px;
+        top: 38px;
+        position: relative;
+    }
+
+    .modal-content {
+        background-color: #470F83;
+        padding: 40px;
+        border-radius: 30px;
+        width: 70%;
+        height: 420px;
+        max-width: 540px;
+        z-index: 20;
+        position: relative;
+        box-shadow: 0 15px 8px rgba(0, 0, 0, 0.2);
+    }
+  }
+  

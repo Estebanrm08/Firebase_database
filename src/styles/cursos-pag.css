@@ -78,3 +78,30 @@
   max-width: 100%;
 }
 
+@media (max-width: 768px) {
+  .encuentra-el-curso-perfecto-pa {
+    margin: 0;
+    position: relative;
+    top: 70px;
+    left: 20px;
+    margin-right: 70px;
+  }
+  
+  .explora-nuestra-amplia-gama-de {
+    margin: 0;
+    font-size: var(--font-size-6xl);
+    font-family: var(--font-montserrat);
+    margin-left: 22px;
+    margin-top: 80px;
+    width: 450px;
+  }
+
+  .moneda-decorativa {
+    position: absolute;
+    top: 190px; 
+    right: -30px; 
+    width: 350px; 
+    z-index: -1; 
+    transform: rotate(-45deg);
+  }
+}
